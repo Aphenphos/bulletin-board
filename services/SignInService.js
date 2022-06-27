@@ -5,3 +5,19 @@ const SUPABASE_KEY =
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 
+export async function getUser() {
+    return client.auth.session() &&
+    client.auth.session().user;
+}
+
+export async function signUp(email, password) {
+    return await client.auth.signup({ email, password });
+}
+
+export async function signIn(email, password) {
+    return await client.auth.signIn({ email, password });
+}
+
+export async function signOut() {
+    await client.auth.signOut();
+}
