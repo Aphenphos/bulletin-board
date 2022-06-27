@@ -10,7 +10,6 @@ export default function createAuthForm(form, { handleAuth }) {
             formData.get('email'),
             formData.get('password')
         );
-        // *** make form data and call handleAuth with email and password
     });
 
     return () => { };

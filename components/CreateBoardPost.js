@@ -1,4 +1,4 @@
-export function createBoardPost(post) {
+export function renderBoardPost(post) {
     const div = document.createElement('div');
     div.classList.add('post-container');
 
