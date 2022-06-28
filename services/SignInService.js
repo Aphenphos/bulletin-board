@@ -5,6 +5,7 @@ const SUPABASE_KEY =
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 
+
 export async function getUser() {
     return client.auth.session() &&
     client.auth.session().user;

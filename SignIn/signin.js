@@ -1,4 +1,4 @@
-import createAuthError from '../components/AuthError';
+import createAuthError from '../components/AuthError.js';
 import { getUser, signIn, signUp } from '../services/SignInService.js';
 
 let errorMessage = '';
