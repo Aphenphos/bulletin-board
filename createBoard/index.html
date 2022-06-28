@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/home.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <title>Web MVC UI</title>
 </head>
 
@@ -23,11 +24,11 @@
     </header>
 
     <main>
-        <section id="create-post">
-            <form>
-            <input type="text" id="title-input" placeholder="Post Title">
-            <input type="text" id="note-input" placeholder="Note">
-            <button id="submit-note">Submit</button>
+        <form id="create-post">
+            <input type="text" name="title" placeholder="Post Title">
+            <input type="text" name="description" placeholder="Post description">
+            <input type="text" name="contact" placeholder="Post contact">
+            <button id="submit-post">Submit</button>
             </form>
             
         </section>
@@ -36,7 +37,7 @@
 
     <footer>&copy;2022 Aspiring Software Developer</footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="CreateBoardpost.js"></script>
 </body>
 
 </html>

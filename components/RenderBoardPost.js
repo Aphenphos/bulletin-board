@@ -7,15 +7,12 @@ export function renderBoardPost(post) {
     h1.textContent = post.title;
 
     const p1 = document.createElement('p');
-    p1.textContent = post.note;
+    p1.textContent = post.description;
 
     const p2 = document.createElement('p');
-    p2.textContent = post.time;
+    p2.textContent = post.contact;
 
-    const p3 = document.createElement('p');
-    p3.textContent = post.contact;
-
-    div.append(h1, p1, p2, p3);
+    div.append(h1, p1, p2);
 
     return div;
 }

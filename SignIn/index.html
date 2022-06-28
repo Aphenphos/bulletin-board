@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/home.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <title>Web MVC UI</title>
 </head>
 
@@ -22,17 +23,22 @@
         <h1>Web MVC UI</h1>
     </header>
 
-    <main>
-        <section id="sign-in">
-    <form>
-                <input type="email" id="user-email">
-                <input type="password" id="user-password">
-        </section>
-        <section id="sign-up">
-                <input type="email" id="signup-email">
-                <input type="password" id="signup-password">
-        </section>      
-    </form>
+    <main id ="sign-in-page">
+        <form id="sign-in">
+        <label>  Sign In   
+            <input type="email" id="user-email" name="email" placeholder="email">
+            <input type="password" id="user-password" name="password" placeholder="password">
+        </label>
+        <button>Sign In</button>
+        </form>
+
+        <form id="sign-up">
+            <label> Sign Up
+                <input type="email" id="signup-email" name="email" placeholder="email">
+                <input type="password" id="signup-password" name="password" placeholder="password">
+            </label>
+            <button>Sign Up</button>
+        </form>      
     <section id="user-feedback">
 
     </section>
@@ -41,7 +47,7 @@
 
     <footer>&copy;2022 Aspiring Software Developer</footer>
 
-    <script type="module" src="signin.js"></script>
+    <script type="module" src="SignIn.js"></script>
 </body>
 
 </html>
