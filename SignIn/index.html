@@ -23,19 +23,31 @@
         <h1>Web MVC UI</h1>
     </header>
 
-    <main>
-        <section id="user-buttons">
-            <button id="sign-in">Sign In</button>
-            <button id="add-post">Add Post</button>
-        </section>
-        <section id="bulletin-board">
+    <main id ="sign-in-page">
+        <form id="sign-in">
+        <label>  Sign In   
+            <input type="email" id="user-email" name="email" placeholder="email">
+            <input type="password" id="user-password" name="password" placeholder="password">
+        </label>
+        <button>Sign In</button>
+        </form>
 
-        </section>
+        <form id="sign-up">
+            <label> Sign Up
+                <input type="email" id="signup-email" name="email" placeholder="email">
+                <input type="password" id="signup-password" name="password" placeholder="password">
+            </label>
+            <button>Sign Up</button>
+        </form>      
+    <section id="user-feedback">
+
+    </section>
+        
     </main>
 
     <footer>&copy;2022 Aspiring Software Developer</footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="SignIn.js"></script>
 </body>
 
 </html>
