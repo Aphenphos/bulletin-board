@@ -27,7 +27,10 @@ export async function signOut() {
 }
 
 export async function getPosts() {
-    const resp = await client.from('posts').select('*');
+    const resp = await client
+        .from('posts')
+        .select('*')
+        .order('created_at', { ascending: false });
     return checkError(resp);
 }
 

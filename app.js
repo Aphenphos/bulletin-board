@@ -12,12 +12,12 @@ async function handlePageLoad() {
     const user = await getUser();
     addPostButton.addEventListener('click', () => {
         if (user) {
+            signInButton.textContent = user.email;
             location.replace('/createBoard');
         } else {
             location.replace('./signin');
         }   
     });
-    signInButton.textContent = user.email;
     display();
 }
 
