@@ -26,7 +26,6 @@ function checkAuth(response) {
 async function handleSignIn(email, password) {
     const response = await signIn(email, password);
     checkAuth(response);
-    console.log(response);
 
  //   handlePageLoad();
 }
